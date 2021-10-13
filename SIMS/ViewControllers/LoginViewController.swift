@@ -12,7 +12,7 @@ protocol LoginDelegate {
     func loginCompleted()
 }
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!

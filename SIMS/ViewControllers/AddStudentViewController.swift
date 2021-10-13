@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class AddStudentViewController: UIViewController {
+class AddStudentViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!

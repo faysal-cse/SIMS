@@ -10,7 +10,7 @@ import CoreData
 import SlideMenuControllerSwift
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var fathersNameField: UITextField!

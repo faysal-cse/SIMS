@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @objc func addTapped() {
-        let addStudentVC = self.storyboard?.instantiateViewController(withIdentifier: "AddStudentViewController") as! AddStudentViewController
+        let addStudentVC = AddStudentViewController.instantiate()
         // addStudentVC.modalPresentationStyle = .fullScreen
         let nvc = UINavigationController(rootViewController: addStudentVC)
         nvc.modalPresentationStyle = .fullScreen
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     func showLoginView(controller: UIViewController){
        
         if !DataStore.readBool(key: PrefKey.LOGIN) {
-            let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            let loginVC = LoginViewController.instantiate()
             loginVC.modalPresentationStyle = .fullScreen
             loginVC.delegate = self
             getTopViewController()?.present(loginVC, animated: true, completion: nil)
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     
     func itemSelected(index: Int) {
         if index == 1 {
-            let changeVC = self.storyboard?.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
+            let changeVC = ChangePasswordViewController.instantiate()
             self.navigationController?.pushViewController(changeVC, animated: true)
         } else if index == 2 {
           //  showLogoutDialog()
@@ -136,7 +136,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
-        let addStudentVC = self.storyboard?.instantiateViewController(withIdentifier: "AddStudentViewController") as! AddStudentViewController
+        let addStudentVC = AddStudentViewController.instantiate()
          addStudentVC.modalPresentationStyle = .fullScreen
         addStudentVC.user = allUsers[indexPath.row]
         let nvc = UINavigationController(rootViewController: addStudentVC)
@@ -215,7 +215,7 @@ extension ViewController : SlideMenuControllerDelegate {
 
 extension ViewController: LoginDelegate {
     func loginCompleted() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             if let leftController = self.getTopViewController()?.slideMenuController()?.leftViewController as? LeftViewController {
                 leftController.updateData()
                 leftController.changeViewController(position: 0)

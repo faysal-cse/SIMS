@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChangePasswordViewController: UIViewController {
+class ChangePasswordViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var oldPasswoed: UITextField!
     @IBOutlet weak var newPasswoed: UITextField!

@@ -52,10 +52,10 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         let mainVC = storyboard.instantiateViewController(withIdentifier: "main") as! ViewController
         self.mainVC = UINavigationController(rootViewController: mainVC)
         
-        let changePasswordVC = storyboard.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
+        let changePasswordVC = ChangePasswordViewController.instantiate()
         self.changePasswordVC = UINavigationController(rootViewController: changePasswordVC)
         
-        let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        let profileVC = ProfileViewController.instantiate()
         self.profileVC = UINavigationController(rootViewController: profileVC)
         updateData()
         tableView.tableFooterView = UIView()
@@ -66,9 +66,6 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         super.viewWillAppear(animated)
        
         
-        
-       // imageHeaderView.signInLbl.text = mainViewController.title
-       //  tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {

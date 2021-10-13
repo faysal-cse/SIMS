@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F893CEA27168EBF00862DD7 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F893CE927168EBF00862DD7 /* ImagePickerManager.swift */; };
 		4F893CEC2716E43D00862DD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F893CEB2716E43D00862DD7 /* Constants.swift */; };
+		4F893CEE2717367100862DD7 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F893CED2717367100862DD7 /* Storyboarded.swift */; };
 		4FB42EC6271545E500B45D0E /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB42EC5271545E500B45D0E /* AddStudentViewController.swift */; };
 		4FB42ECC271603C300B45D0E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB42ECB271603C300B45D0E /* DataManager.swift */; };
 		4FC7F96E2713CF370067CA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F96D2713CF370067CA98 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		4EE5CB92992274249CA846BB /* Pods-SIMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMS.release.xcconfig"; path = "Target Support Files/Pods-SIMS/Pods-SIMS.release.xcconfig"; sourceTree = "<group>"; };
 		4F893CE927168EBF00862DD7 /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		4F893CEB2716E43D00862DD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F893CED2717367100862DD7 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		4FB42EC5271545E500B45D0E /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 		4FB42ECB271603C300B45D0E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4FC7F96A2713CF370067CA98 /* SIMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				4FC7F98A27141A870067CA98 /* DataStore.swift */,
 				4FC7F988271419AF0067CA98 /* UIViewExt.swift */,
 				4FC7F98627140E9F0067CA98 /* Utility.swift */,
+				4F893CED2717367100862DD7 /* Storyboarded.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				4FC7F9A527149D1E0067CA98 /* ImageHeaderView.swift in Sources */,
 				4FC7F9722713CF370067CA98 /* ViewController.swift in Sources */,
 				4F893CEA27168EBF00862DD7 /* ImagePickerManager.swift in Sources */,
+				4F893CEE2717367100862DD7 /* Storyboarded.swift in Sources */,
 				4FC7F9782713CF370067CA98 /* SIMS.xcdatamodeld in Sources */,
 				4FC7F9A327149D1E0067CA98 /* LeftViewController.swift in Sources */,
 				4FC7F98E27144DB70067CA98 /* PrefKey.swift in Sources */,
@@ -504,12 +508,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z53LL8JBWB;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SIMS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture image ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To get image from gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -521,9 +527,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dreamonline.SIMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.sims;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = DOL_Development;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,12 +542,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z53LL8JBWB;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SIMS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture image ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To get image from gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -553,9 +561,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dreamonline.SIMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.sims;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = DOL_Development;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
