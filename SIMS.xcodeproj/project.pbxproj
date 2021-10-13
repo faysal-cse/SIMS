@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F893CEA27168EBF00862DD7 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F893CE927168EBF00862DD7 /* ImagePickerManager.swift */; };
+		4F893CEC2716E43D00862DD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F893CEB2716E43D00862DD7 /* Constants.swift */; };
+		4FB42EC6271545E500B45D0E /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB42EC5271545E500B45D0E /* AddStudentViewController.swift */; };
+		4FB42ECC271603C300B45D0E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB42ECB271603C300B45D0E /* DataManager.swift */; };
+		4FC7F96E2713CF370067CA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F96D2713CF370067CA98 /* AppDelegate.swift */; };
+		4FC7F9702713CF370067CA98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F96F2713CF370067CA98 /* SceneDelegate.swift */; };
+		4FC7F9722713CF370067CA98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F9712713CF370067CA98 /* ViewController.swift */; };
+		4FC7F9752713CF370067CA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7F9732713CF370067CA98 /* Main.storyboard */; };
+		4FC7F9782713CF370067CA98 /* SIMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F9762713CF370067CA98 /* SIMS.xcdatamodeld */; };
+		4FC7F97A2713CF380067CA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7F9792713CF380067CA98 /* Assets.xcassets */; };
+		4FC7F97D2713CF380067CA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7F97B2713CF380067CA98 /* LaunchScreen.storyboard */; };
+		4FC7F98527140E0C0067CA98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F98427140E0C0067CA98 /* LoginViewController.swift */; };
+		4FC7F98727140E9F0067CA98 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F98627140E9F0067CA98 /* Utility.swift */; };
+		4FC7F989271419AF0067CA98 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F988271419AF0067CA98 /* UIViewExt.swift */; };
+		4FC7F98B27141A870067CA98 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F98A27141A870067CA98 /* DataStore.swift */; };
+		4FC7F98E27144DB70067CA98 /* PrefKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F98D27144DB70067CA98 /* PrefKey.swift */; };
+		4FC7F99927149CD00067CA98 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F99827149CD00067CA98 /* UIViewControllerExt.swift */; };
+		4FC7F9A327149D1E0067CA98 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F99B27149D1E0067CA98 /* LeftViewController.swift */; };
+		4FC7F9A427149D1E0067CA98 /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7F99D27149D1E0067CA98 /* ImageHeaderView.xib */; };
+		4FC7F9A527149D1E0067CA98 /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F99E27149D1E0067CA98 /* ImageHeaderView.swift */; };
+		4FC7F9A827149D1E0067CA98 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F9A227149D1E0067CA98 /* SlideViewController.swift */; };
+		4FC7F9AA2714A77F0067CA98 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F9A92714A77E0067CA98 /* ChangePasswordViewController.swift */; };
+		4FC7F9AC2714B5340067CA98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7F9AB2714B5340067CA98 /* ProfileViewController.swift */; };
+		85A893BFFF0F27432383591B /* Pods_SIMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA516F491F3F6957CF86130 /* Pods_SIMS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43884FFB1AE4850D09C8926B /* Pods-SIMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMS.debug.xcconfig"; path = "Target Support Files/Pods-SIMS/Pods-SIMS.debug.xcconfig"; sourceTree = "<group>"; };
+		4EE5CB92992274249CA846BB /* Pods-SIMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMS.release.xcconfig"; path = "Target Support Files/Pods-SIMS/Pods-SIMS.release.xcconfig"; sourceTree = "<group>"; };
+		4F893CE927168EBF00862DD7 /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		4F893CEB2716E43D00862DD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FB42EC5271545E500B45D0E /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		4FB42ECB271603C300B45D0E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4FC7F96A2713CF370067CA98 /* SIMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC7F96D2713CF370067CA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FC7F96F2713CF370067CA98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4FC7F9712713CF370067CA98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FC7F9742713CF370067CA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FC7F9772713CF370067CA98 /* SIMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SIMS.xcdatamodel; sourceTree = "<group>"; };
+		4FC7F9792713CF380067CA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FC7F97C2713CF380067CA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FC7F97E2713CF380067CA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC7F98427140E0C0067CA98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4FC7F98627140E9F0067CA98 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4FC7F988271419AF0067CA98 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		4FC7F98A27141A870067CA98 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		4FC7F98D27144DB70067CA98 /* PrefKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefKey.swift; sourceTree = "<group>"; };
+		4FC7F99827149CD00067CA98 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		4FC7F99B27149D1E0067CA98 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		4FC7F99D27149D1E0067CA98 /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
+		4FC7F99E27149D1E0067CA98 /* ImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		4FC7F9A227149D1E0067CA98 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		4FC7F9A92714A77E0067CA98 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		4FC7F9AB2714B5340067CA98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DAA516F491F3F6957CF86130 /* Pods_SIMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FC7F9672713CF370067CA98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A893BFFF0F27432383591B /* Pods_SIMS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4830427478B01DF10507CDB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA516F491F3F6957CF86130 /* Pods_SIMS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FC7F9612713CF370067CA98 = {
+			isa = PBXGroup;
+			children = (
+				4FC7F96C2713CF370067CA98 /* SIMS */,
+				4FC7F96B2713CF370067CA98 /* Products */,
+				51527FD5AD3F82713751008F /* Pods */,
+				4830427478B01DF10507CDB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FC7F96B2713CF370067CA98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F96A2713CF370067CA98 /* SIMS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FC7F96C2713CF370067CA98 /* SIMS */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F99A27149D1E0067CA98 /* DrawerMenu */,
+				4FC7F98F27145B670067CA98 /* Manager */,
+				4FC7F98C27144DA50067CA98 /* Constants */,
+				4FC7F99427145C100067CA98 /* Utility */,
+				4FC7F99327145BE90067CA98 /* ViewControllers */,
+				4FC7F96D2713CF370067CA98 /* AppDelegate.swift */,
+				4FC7F96F2713CF370067CA98 /* SceneDelegate.swift */,
+				4FC7F9712713CF370067CA98 /* ViewController.swift */,
+				4FC7F9732713CF370067CA98 /* Main.storyboard */,
+				4FC7F9792713CF380067CA98 /* Assets.xcassets */,
+				4FC7F97B2713CF380067CA98 /* LaunchScreen.storyboard */,
+				4FC7F97E2713CF380067CA98 /* Info.plist */,
+				4FC7F9762713CF370067CA98 /* SIMS.xcdatamodeld */,
+			);
+			path = SIMS;
+			sourceTree = "<group>";
+		};
+		4FC7F98C27144DA50067CA98 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F98D27144DB70067CA98 /* PrefKey.swift */,
+				4F893CEB2716E43D00862DD7 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4FC7F98F27145B670067CA98 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F99027145B700067CA98 /* Model */,
+				4FC7F99227145BDA0067CA98 /* Datamanager */,
+				4FC7F99127145B7C0067CA98 /* ViewModel */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4FC7F99027145B700067CA98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FC7F99127145B7C0067CA98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FC7F99227145BDA0067CA98 /* Datamanager */ = {
+			isa = PBXGroup;
+			children = (
+				4FB42ECB271603C300B45D0E /* DataManager.swift */,
+			);
+			path = Datamanager;
+			sourceTree = "<group>";
+		};
+		4FC7F99327145BE90067CA98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F98427140E0C0067CA98 /* LoginViewController.swift */,
+				4FC7F9A92714A77E0067CA98 /* ChangePasswordViewController.swift */,
+				4FC7F9AB2714B5340067CA98 /* ProfileViewController.swift */,
+				4FB42EC5271545E500B45D0E /* AddStudentViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4FC7F99427145C100067CA98 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4F893CE927168EBF00862DD7 /* ImagePickerManager.swift */,
+				4FC7F99727149CB60067CA98 /* Extension */,
+				4FC7F98A27141A870067CA98 /* DataStore.swift */,
+				4FC7F988271419AF0067CA98 /* UIViewExt.swift */,
+				4FC7F98627140E9F0067CA98 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4FC7F99727149CB60067CA98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F99827149CD00067CA98 /* UIViewControllerExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4FC7F99A27149D1E0067CA98 /* DrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F99B27149D1E0067CA98 /* LeftViewController.swift */,
+				4FC7F9A227149D1E0067CA98 /* SlideViewController.swift */,
+				4FC7F99C27149D1E0067CA98 /* view */,
+			);
+			path = DrawerMenu;
+			sourceTree = "<group>";
+		};
+		4FC7F99C27149D1E0067CA98 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7F99D27149D1E0067CA98 /* ImageHeaderView.xib */,
+				4FC7F99E27149D1E0067CA98 /* ImageHeaderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		51527FD5AD3F82713751008F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43884FFB1AE4850D09C8926B /* Pods-SIMS.debug.xcconfig */,
+				4EE5CB92992274249CA846BB /* Pods-SIMS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FC7F9692713CF370067CA98 /* SIMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FC7F9812713CF380067CA98 /* Build configuration list for PBXNativeTarget "SIMS" */;
+			buildPhases = (
+				EEBB256D88324AEE4C7AB42B /* [CP] Check Pods Manifest.lock */,
+				4FC7F9662713CF370067CA98 /* Sources */,
+				4FC7F9672713CF370067CA98 /* Frameworks */,
+				4FC7F9682713CF370067CA98 /* Resources */,
+				A1E4179E4CE8BAD5C8DC179B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIMS;
+			productName = SIMS;
+			productReference = 4FC7F96A2713CF370067CA98 /* SIMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FC7F9622713CF370067CA98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4FC7F9692713CF370067CA98 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 4FC7F9652713CF370067CA98 /* Build configuration list for PBXProject "SIMS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FC7F9612713CF370067CA98;
+			productRefGroup = 4FC7F96B2713CF370067CA98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FC7F9692713CF370067CA98 /* SIMS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FC7F9682713CF370067CA98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC7F97D2713CF380067CA98 /* LaunchScreen.storyboard in Resources */,
+				4FC7F97A2713CF380067CA98 /* Assets.xcassets in Resources */,
+				4FC7F9752713CF370067CA98 /* Main.storyboard in Resources */,
+				4FC7F9A427149D1E0067CA98 /* ImageHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1E4179E4CE8BAD5C8DC179B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIMS/Pods-SIMS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIMS/Pods-SIMS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SIMS/Pods-SIMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBB256D88324AEE4C7AB42B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SIMS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FC7F9662713CF370067CA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC7F99927149CD00067CA98 /* UIViewControllerExt.swift in Sources */,
+				4F893CEC2716E43D00862DD7 /* Constants.swift in Sources */,
+				4FC7F989271419AF0067CA98 /* UIViewExt.swift in Sources */,
+				4FC7F98B27141A870067CA98 /* DataStore.swift in Sources */,
+				4FC7F9A527149D1E0067CA98 /* ImageHeaderView.swift in Sources */,
+				4FC7F9722713CF370067CA98 /* ViewController.swift in Sources */,
+				4F893CEA27168EBF00862DD7 /* ImagePickerManager.swift in Sources */,
+				4FC7F9782713CF370067CA98 /* SIMS.xcdatamodeld in Sources */,
+				4FC7F9A327149D1E0067CA98 /* LeftViewController.swift in Sources */,
+				4FC7F98E27144DB70067CA98 /* PrefKey.swift in Sources */,
+				4FB42EC6271545E500B45D0E /* AddStudentViewController.swift in Sources */,
+				4FB42ECC271603C300B45D0E /* DataManager.swift in Sources */,
+				4FC7F98727140E9F0067CA98 /* Utility.swift in Sources */,
+				4FC7F96E2713CF370067CA98 /* AppDelegate.swift in Sources */,
+				4FC7F98527140E0C0067CA98 /* LoginViewController.swift in Sources */,
+				4FC7F9A827149D1E0067CA98 /* SlideViewController.swift in Sources */,
+				4FC7F9AC2714B5340067CA98 /* ProfileViewController.swift in Sources */,
+				4FC7F9702713CF370067CA98 /* SceneDelegate.swift in Sources */,
+				4FC7F9AA2714A77F0067CA98 /* ChangePasswordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FC7F9732713CF370067CA98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC7F9742713CF370067CA98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FC7F97B2713CF380067CA98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC7F97C2713CF380067CA98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FC7F97F2713CF380067CA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FC7F9802713CF380067CA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FC7F9822713CF380067CA98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43884FFB1AE4850D09C8926B /* Pods-SIMS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z53LL8JBWB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SIMS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamonline.SIMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DOL_Development;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FC7F9832713CF380067CA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE5CB92992274249CA846BB /* Pods-SIMS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z53LL8JBWB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SIMS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamonline.SIMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DOL_Development;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FC7F9652713CF370067CA98 /* Build configuration list for PBXProject "SIMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FC7F97F2713CF380067CA98 /* Debug */,
+				4FC7F9802713CF380067CA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FC7F9812713CF380067CA98 /* Build configuration list for PBXNativeTarget "SIMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FC7F9822713CF380067CA98 /* Debug */,
+				4FC7F9832713CF380067CA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FC7F9762713CF370067CA98 /* SIMS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FC7F9772713CF370067CA98 /* SIMS.xcdatamodel */,
+			);
+			currentVersion = 4FC7F9772713CF370067CA98 /* SIMS.xcdatamodel */;
+			path = SIMS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4FC7F9622713CF370067CA98 /* Project object */;
+}

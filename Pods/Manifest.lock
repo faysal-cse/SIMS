@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManager (6.5.6)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SlideMenuControllerSwift (4.0.0)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - NVActivityIndicatorView
+  - SlideMenuControllerSwift
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - NVActivityIndicatorView
+    - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+
+PODFILE CHECKSUM: 078752af61903bbe48881cb18cb69b0317dda111
+
+COCOAPODS: 1.11.2
