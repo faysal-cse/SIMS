@@ -108,7 +108,7 @@ class AddStudentViewController: UIViewController, Storyboarded {
     
     @IBAction func addStudentBtnAction(_ sender: UIButton) {
         if let email = self.emailField.text, let password = self.passwordField.text, let confirmPassword = self.confirmPasswordField.text, let name = self.nameField.text, let fathersName = self.fathersNameField.text, let birthDay = self.dobField.text, let studentClass = self.classField.text, let roll = self.rollField.text {
-            if email.isValidEmail, !name.isEmpty {
+            if email.isValidEmail, !name.trimmingCharacters(in: .whitespaces).isEmpty {
                 if isUpdate {
                     
                     if let userObj = user as? Students {
@@ -138,8 +138,16 @@ class AddStudentViewController: UIViewController, Storyboarded {
                                 self?.showAlert(title: "Error", message: "User Already exists")
                             }
                         }
+                    } else {
+                        self.showAlert(title: "Error", message: "Password not matched")
                     }
                    
+                }
+            } else{
+                if !email.isValidEmail {
+                    self.showAlert(title: "Error", message: "Email not valid")
+                } else {
+                    self.showAlert(title: "Error", message: "name cannot be empty")
                 }
             }
         }
