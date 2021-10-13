@@ -2,7 +2,7 @@
 //  DataManager.swift
 //  SIMS
 //
-//  Created by DreamOnline Ltd on 12/10/21.
+//  Created by Faysal on 12/10/21.
 //
 
 import Foundation
