@@ -330,8 +330,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="addStudentBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="oPq-Lr-GJh"/>
-                                    <action selector="loginBtnAction:" destination="8dd-ZO-cjY" eventType="touchUpInside" id="efA-sj-hQQ"/>
                                     <action selector="updateBtnAction:" destination="HpE-sb-YwY" eventType="touchUpInside" id="N8a-Wp-iky"/>
                                 </connections>
                             </button>
@@ -351,12 +349,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="addStudentBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="Bzh-dF-lQc"/>
-                                    <action selector="deleteBtnAction:" destination="HpE-sb-YwY" eventType="touchUpInside" id="0Jt-V0-mae"/>
-                                    <action selector="loginBtnAction:" destination="8dd-ZO-cjY" eventType="touchUpInside" id="bY8-NT-VCb"/>
+                                    <action selector="deleteBtnAction:" destination="HpE-sb-YwY" eventType="touchUpInside" id="4R9-xq-VXd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3Z-cx-Xac">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="v3Z-cx-Xac">
                                 <rect key="frame" x="147" y="68" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="ZGk-KZ-epq"/>
@@ -440,7 +436,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8e-Nz-XiG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="S8e-Nz-XiG">
                                         <rect key="frame" x="147" y="25" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="LYx-gg-n4X"/>
@@ -475,7 +471,7 @@
                                             <constraint firstAttribute="height" constant="40" id="wZp-n6-Z0d"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Czy-Hu-mIM">
                                         <rect key="frame" x="20" y="254" width="374" height="40"/>
@@ -485,7 +481,7 @@
                                             <constraint firstAttribute="height" constant="40" id="8iV-gl-SLH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-cv-ORe">
                                         <rect key="frame" x="20" y="310" width="374" height="40"/>
@@ -495,7 +491,7 @@
                                             <constraint firstAttribute="height" constant="40" id="PRW-1G-mSz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq6-iR-Iz3">
                                         <rect key="frame" x="20" y="403" width="374" height="40"/>
@@ -564,7 +560,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addStudentBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="Z0j-qb-0di"/>
-                                            <action selector="loginBtnAction:" destination="8dd-ZO-cjY" eventType="touchUpInside" id="a89-aM-OKS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2im-2i-pzA">
@@ -583,10 +578,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="addStudentBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="P3m-jI-Mil"/>
-                                            <action selector="deleteBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="X9V-pH-6kG"/>
-                                            <action selector="deleteBtnAction:" destination="HpE-sb-YwY" eventType="touchUpInside" id="bm3-0G-dct"/>
-                                            <action selector="loginBtnAction:" destination="8dd-ZO-cjY" eventType="touchUpInside" id="NDX-o2-bwC"/>
+                                            <action selector="deleteBtnAction:" destination="uo4-pb-J5i" eventType="touchUpInside" id="bz0-tc-Usx"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-lT-3E6">
@@ -907,6 +899,7 @@
     </scenes>
     <resources>
         <image name="ic_drawer" width="25" height="25"/>
+        <image name="user" width="100" height="100"/>
         <namedColor name="colorAcent">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

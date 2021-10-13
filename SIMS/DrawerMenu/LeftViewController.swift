@@ -28,7 +28,7 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
     
     
     var items = ["Home","Change password","Logout"]
-    let images = ["student","student","student"]
+    let images = ["home","password","logout"]
     
     var mainVC: UIViewController!
     var profileVC : UIViewController!

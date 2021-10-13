@@ -111,8 +111,8 @@ class ProfileViewController: UIViewController, Storyboarded {
                 userObj.name = name
                 userObj.fathername = fathersName
                 userObj.birthday = birthDay
-                userObj.student_class = Int32(studentClass)!
-                userObj.roll = Int32(roll)!
+                userObj.student_class = Int32(studentClass) ?? 0
+                userObj.roll = Int32(roll) ?? 0
                 if self.isImageUpdated {
                     userObj.profileImage = self.profileImage.image!.jpegData(compressionQuality: 1.0)
                 }

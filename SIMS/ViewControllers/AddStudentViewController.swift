@@ -112,11 +112,11 @@ class AddStudentViewController: UIViewController, Storyboarded {
                 if isUpdate {
                     
                     if let userObj = user as? Students {
-                        userObj.name = name
+                        userObj.name = name.trimmingCharacters(in: .whitespaces)
                         userObj.fathername = fathersName
                         userObj.birthday = birthDay
-                        userObj.student_class = Int32(studentClass)!
-                        userObj.roll = Int32(roll)!
+                        userObj.student_class = Int32(studentClass) ?? 0
+                        userObj.roll = Int32(roll) ?? 0
                         if self.isImageUpdated {
                             userObj.profileImage = self.profileImage.image!.jpegData(compressionQuality: 1.0)
                         }
@@ -131,7 +131,7 @@ class AddStudentViewController: UIViewController, Storyboarded {
                     if !password.isEmpty, password == confirmPassword {
                         DataManager.shared.isExist(email: email) { [weak self] success in
                             if !success {
-                                DataManager.shared.saveData(email: email, password: password, name: name, fathersName: fathersName, birthDay: birthDay, studentClass: Int(studentClass)!, roll: Int(roll)!, profileImage: self?.profileImage.image) { success in
+                                DataManager.shared.saveData(email: email, password: password, name: name, fathersName: fathersName, birthDay: birthDay, studentClass: Int(studentClass) ?? 0, roll: Int(roll) ?? 0, profileImage: self?.profileImage.image) { success in
                                     self?.dismiss(animated: true, completion: nil)
                                 }
                             } else {
@@ -170,7 +170,7 @@ class AddStudentViewController: UIViewController, Storyboarded {
         alert.addAction(UIAlertAction.init(title: "Delete", style: .destructive, handler: { action in
             
             DataManager.shared.removeData(object: self.user!)
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
 
         }))
         self.present(alert, animated: true, completion: nil)

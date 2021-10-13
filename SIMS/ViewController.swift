@@ -137,7 +137,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
         let addStudentVC = AddStudentViewController.instantiate()
-         addStudentVC.modalPresentationStyle = .fullScreen
         addStudentVC.user = allUsers[indexPath.row]
         let nvc = UINavigationController(rootViewController: addStudentVC)
         nvc.modalPresentationStyle = .fullScreen
