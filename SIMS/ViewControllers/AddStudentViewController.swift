@@ -21,6 +21,7 @@ class AddStudentViewController: UIViewController, Storyboarded {
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var imageBtn: UIButton!
     
     var user: NSManagedObject? = nil
     var isUpdate = false
@@ -38,6 +39,7 @@ class AddStudentViewController: UIViewController, Storyboarded {
     
     func initData() {
         deleteBtn.isHidden = true
+        addBtn.setTitle("Add student", for: .normal)
         if let userObj = user as? Students {
             deleteBtn.isHidden = false
             addBtn.setTitle("Update", for: .normal)
@@ -57,6 +59,8 @@ class AddStudentViewController: UIViewController, Storyboarded {
                 self.profileImage.image = UIImage.init(named: "user")
             }
         }
+        deleteBtn.setTitle("Delete", for: .normal)
+        imageBtn.setTitle("", for: .normal)
     }
     
     func showDatePicker(){

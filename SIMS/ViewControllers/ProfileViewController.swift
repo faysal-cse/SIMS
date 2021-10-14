@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController, Storyboarded {
     @IBOutlet weak var rollField: UITextField!
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var imageBtn: UIButton!
+    @IBOutlet weak var updateBtn: UIButton!
     
     var user: NSManagedObject!
     var isImageUpdated = false
@@ -29,6 +31,7 @@ class ProfileViewController: UIViewController, Storyboarded {
         self.navigationItem.title = "Profile"
         loadData()
         showDatePicker()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +60,8 @@ class ProfileViewController: UIViewController, Storyboarded {
                 self.profileImage.image = UIImage.init(named: "user")
             }
         }
+        imageBtn.setTitle("", for: .normal)
+        updateBtn.setTitle("", for: .normal)
     }
     
     func showDatePicker(){

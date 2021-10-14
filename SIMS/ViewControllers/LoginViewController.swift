@@ -16,6 +16,7 @@ class LoginViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     var delegate: LoginDelegate? = nil
     
@@ -33,6 +34,7 @@ class LoginViewController: UIViewController, Storyboarded {
         passwordField.layer.borderColor = UIColor.white.cgColor
         passwordField.layer.borderWidth = 0.5
         passwordField.layer.cornerRadius = 5
+        loginBtn.setTitle("Login", for: .normal)
     }
     
     

@@ -86,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="emailField" destination="1pW-4U-OQ0" id="agS-VG-Gyx"/>
+                        <outlet property="loginBtn" destination="UEI-Fd-vOs" id="1Hs-8N-oKQ"/>
                         <outlet property="passwordField" destination="BSi-fW-Dny" id="2Fy-C9-3Qd"/>
                     </connections>
                 </viewController>
@@ -250,6 +251,7 @@
                         <outlet property="confirmPasswoed" destination="BqH-3N-PZo" id="h4X-m2-SSm"/>
                         <outlet property="newPasswoed" destination="fCV-cB-bQy" id="CEe-bV-x67"/>
                         <outlet property="oldPasswoed" destination="i7g-DH-027" id="t4L-G4-Jf0"/>
+                        <outlet property="updateBtn" destination="ip4-mC-zK4" id="cCs-Fw-tIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRQ-Ns-VUi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -410,9 +412,11 @@
                         <outlet property="deleteBtn" destination="qWQ-q8-NBo" id="Qtq-ER-Fnb"/>
                         <outlet property="dobField" destination="Xok-EH-JKw" id="I10-dJ-hnB"/>
                         <outlet property="fathersNameField" destination="YGA-bb-hjg" id="kfX-il-FoP"/>
+                        <outlet property="imageBtn" destination="P8O-Be-v9w" id="ch5-1K-PN4"/>
                         <outlet property="nameField" destination="OhD-9H-ehf" id="9B3-wz-zjr"/>
                         <outlet property="profileImage" destination="v3Z-cx-Xac" id="qV7-FC-pyv"/>
                         <outlet property="rollField" destination="wS1-1b-95A" id="ZLW-BQ-xg9"/>
+                        <outlet property="updateBtn" destination="H79-Ba-1hT" id="j7D-tn-6nM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhF-X4-XR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -658,6 +662,7 @@
                         <outlet property="dobField" destination="UTV-CC-eo5" id="afA-No-NPn"/>
                         <outlet property="emailField" destination="4WU-rb-DB0" id="2kR-p1-pie"/>
                         <outlet property="fathersNameField" destination="ejn-Os-9bg" id="Deg-Rp-7m3"/>
+                        <outlet property="imageBtn" destination="KED-zi-kgB" id="ifM-XA-DPg"/>
                         <outlet property="nameField" destination="uq6-iR-Iz3" id="J2R-QF-vEI"/>
                         <outlet property="passwordField" destination="Czy-Hu-mIM" id="A1N-th-nV5"/>
                         <outlet property="profileImage" destination="S8e-Nz-XiG" id="NIZ-fw-XoD"/>

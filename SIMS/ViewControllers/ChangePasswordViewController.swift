@@ -12,6 +12,7 @@ class ChangePasswordViewController: UIViewController, Storyboarded {
     @IBOutlet weak var oldPasswoed: UITextField!
     @IBOutlet weak var newPasswoed: UITextField!
     @IBOutlet weak var confirmPasswoed: UITextField!
+    @IBOutlet weak var updateBtn: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
