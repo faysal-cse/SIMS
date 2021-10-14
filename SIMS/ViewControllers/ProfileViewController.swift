@@ -61,7 +61,7 @@ class ProfileViewController: UIViewController, Storyboarded {
             }
         }
         imageBtn.setTitle("", for: .normal)
-        updateBtn.setTitle("", for: .normal)
+        updateBtn.setTitle("Update", for: .normal)
     }
     
     func showDatePicker(){
