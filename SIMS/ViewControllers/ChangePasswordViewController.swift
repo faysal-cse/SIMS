@@ -30,7 +30,7 @@ class ChangePasswordViewController: UIViewController, Storyboarded {
                     currentUser.password = newPasswoed
                     DataManager.shared.updateData(object: currentUser)
                     DataStore.writeBool(value: false, key: PrefKey.LOGIN)
-                    self.navigationController?.popViewController(animated: true)
+                    self.showAlert(title: "Success", message: "Password Changed Successfully")
                 }else{
                     self.showAlert(title: "Error", message: "Password not matched")
                 }
