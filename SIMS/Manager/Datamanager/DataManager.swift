@@ -20,7 +20,7 @@ class DataManager: NSObject {
             return
         }
         
-        let fetchRequest = Students.fetchRequest()
+        let fetchRequest = NSFetchRequest<Students>(entityName: "Students")
 
         // Create the component predicates
         let namePredicate = NSPredicate(
@@ -63,7 +63,7 @@ class DataManager: NSObject {
         let managedContext =
           appDelegate.persistentContainer.viewContext
        
-        let fetchRequest = Students.fetchRequest()
+        let fetchRequest = NSFetchRequest<Students>(entityName: "Students")
 
         // Create the component predicates
         let namePredicate = NSPredicate(
@@ -90,7 +90,7 @@ class DataManager: NSObject {
             return
         }
         
-        let fetchRequest = Students.fetchRequest()
+        let fetchRequest = NSFetchRequest<Students>(entityName: "Students")
 
         // Create the component predicates
         let namePredicate = NSPredicate(
@@ -119,7 +119,7 @@ class DataManager: NSObject {
             return
         }
         
-        let fetchRequest = Students.fetchRequest()
+        let fetchRequest = NSFetchRequest<Students>(entityName: "Students")
         fetchRequest.fetchLimit = 1
         // Create the component predicates
         let namePredicate = NSPredicate(
