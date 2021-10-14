@@ -25,5 +25,10 @@
     <string>To capture image </string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>To get image from gallery</string>
+    <key>UILaunchScreen</key>
+        <dict>
+            <key>UIColorName</key>
+            <string>LaunchScreen</string>
+        </dict>
 </dict>
 </plist>
