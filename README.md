@@ -1,4 +1,4 @@
-# SIMS
+# SIMS(Core data sample with insert, delete, update)
 
 To run this project 
 
